@@ -1,0 +1,152 @@
+/*menu  blinking */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,700,500,300);
+body {
+  background-color: #111;
+  background-position: 40%;
+  background-repeat: no-repeat;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+h3 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+  margin: 15px;
+ height: 30px;
+
+}
+
+small {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+}
+
+.navicon {
+  position: absolute;
+ left: -50%;
+ top: -2%;
+  background: transparent;
+  margin: 100px auto 50px;
+  position: relative;
+  height: 60px;
+  width: 100px;
+  display: block;
+  z-index: 99;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+  margin-left: 50%;
+    margin-top: -20px;
+}
+.navicon:before, .navicon:after {
+  background: #3db2e1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  content: "";
+  height: 3px;
+  left: 0;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  width: 50px;
+}
+.navicon:before {
+  -webkit-box-shadow: blue 0 14px 0 0;
+          box-shadow: blue 0 14px 0 0;
+  position: absolute;
+  top: 0;
+}
+.navicon:after {
+  position: absolute;
+  top: 30px;
+}
+.navicon--active {
+  margin-top: -1.5%;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+}
+.navicon--active:before {
+  -webkit-box-shadow: transparent 0 0 0 0;
+          box-shadow: transparent 0 0 0 0;
+  top: 20px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+.navicon--active:after {
+  top: 20px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+.toggle {
+  position: relative;
+  left: 0%;
+  top: -10%;
+  display: block;
+  margin:10px auto;
+  width: 100%;
+height: 70%;
+  z-index: 110;
+  background-color:#A411ED;
+  padding: 15px;
+  display: block;
+  opacity: 0;
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  min-width: 320px;
+}
+.toggle--active {
+  display: block;
+  opacity:1;
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.toggle__menu {
+  margin-bottom: 25px;
+}
+.toggle__menu li {
+  width: 30%;
+  display: block;
+  margin: 10px auto;
+}
+.toggle__menu li a {
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+  font-weight: 600;
+  padding: 5px 0;
+}
+.toggle__menu li a span {
+  text-transform: lowercase;
+}
+.toggle__menu li a:hover {
+  color: #db5523;
+  border-bottom: 2px solid #db5523;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  font-weight: 700;
+}
+
+

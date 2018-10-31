@@ -1,0 +1,302 @@
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  position: static;
+  left: 0%;
+  top: -95%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  width: auto;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+}
+#cssmenu > ul {
+  background: #black;
+
+}
+#cssmenu > ul > li {
+  float: right;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  word-spacing: 10px;
+
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+
+#cssmenu > ul > li > a {
+  padding: 15px 20px;
+  font-size: 14px;
+
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #3db2e1;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#cssmenu > ul > li.active > a {
+  color: #dff2fa;
+
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #dff2fa;
+  -webkit-transform: rotateX(90deg) translateY(-23px);
+  -moz-transform: rotateX(90deg) translateY(-23px);
+  transform: rotateX(90deg) translateY(-23px);
+  -ms-transform: none;
+}
+#cssmenu > ul > li > a::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 16px 20px;
+  color: #dff2fa;
+  background: #19799f;
+  content: attr(data-title);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -ms-transform: translateY(- -18px);
+}
+#cssmenu > ul > li:hover > a::before,
+#cssmenu > ul > li > a:hover::before {
+  background: #3db2e1;
+}
+#cssmenu.small-screen {
+  width: 100%;
+}
+#cssmenu.small-screen > ul,
+#cssmenu.small-screen.align-center > ul {
+  width: 100%;
+  text-align: left;
+}
+#cssmenu.small-screen > ul > li,
+#cssmenu.small-screen.align-center {
+  float: none;
+  display: block;
+  border-top: 1px solid rgba(100, 100, 100, 0.1);
+}
+#cssmenu.small-screen > ul > li:hover > a,
+#cssmenu.small-screen > ul > li > a:hover {
+  color: #dff2fa;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  -ms-transform: none;
+}
+#cssmenu.small-screen > ul > li > a::before {
+  display: none;
+}
+#cssmenu.small-screen #menu-button {
+  display: block;
+  padding: 16px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #3db2e1;
+}
+#cssmenu.small-screen #menu-button:after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  width: 22px;
+  height: 3px;
+}
+#cssmenu.small-screen #menu-button.menu-opened:after {
+  border-top: 2px solid #dff2fa;
+  border-bottom: 2px solid #dff2fa;
+}
+#cssmenu.small-screen #menu-button:before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 27px;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+}
+#cssmenu.small-screen #menu-button.menu-opened:before {
+  background: #dff2fa;
+}
+
+/* blinking text code from here */
+
+  span>a{
+   position: absolute;
+    left: 20%;
+    top: 30%;
+    font-size: 120%;
+    font-family: cursive;
+    color: white ;
+    animation: blink 1s linear infinite;
+  }
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+
+
+
+
+.wrapper {
+  position: absolute;
+  width: 1500px;
+  height: 1px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  top: -82%;
+  margin: auto;
+}
+
+.loader {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.loader div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: red;
+  -webkit-animation: go 1.0s infinite alternate ease;
+          animation: go 1.0s infinite alternate ease;
+  -webkit-box-shadow: 0 0 20px salmon;
+          box-shadow: 0 0 20px salmon;
+}
+.loader div:nth-child(1) {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+.loader div:nth-child(2) {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+.loader div:nth-child(3) {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+}
+.loader div:nth-child(4) {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+.loader div:nth-child(5) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+.loader div:nth-child(6) {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+.loader div:nth-child(7) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.loader div:nth-child(8) {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+.loader div:nth-child(9) {
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+}
+.loader div:nth-child(10) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes go {
+  100% {
+    background: transparent;
+    -webkit-box-flex: 10;
+            flex: 10;
+    -webkit-box-shadow: 0 0 0 transparent;
+            box-shadow: 0 0 0 transparent;
+  }
+}
+
+@keyframes go {
+  100% {
+    background: transparent;
+    -webkit-box-flex: 10;
+        -ms-flex: 10;
+            flex: 10;
+    -webkit-box-shadow: 0 0 0 transparent;
+            box-shadow: 0 0 0 transparent;
+  }
+}

@@ -1,0 +1,150 @@
+
+.search_categories{
+  font-size: 13px;
+  padding: 10px 8px 10px 14px;
+  /*background: #fff;*/
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  position: absolute;
+  left: 2%;
+  top: 20%;
+  right: 40%;
+  width: 15%;
+  height: 4%;
+  text-align: center;
+  line-height: 2;
+ overflow:hidden;
+   -moz-border-radius: 9px 9px 9px 9px;
+   -webkit-border-radius: 9px 9px 9px 9px;
+   border-radius: 9px 9px 9px 9px;
+   box-shadow: 1px 1px 11px #330033;
+   background: #58B14C ;
+}
+
+
+
+.search_categories .select select{
+  background: #58B14C;
+  line-height: 2;
+  padding: 0;
+  border: 1px;
+  border-radius: 6px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  font-size: 1em;
+   font-size: 15px;
+   font-weight: bold;
+   padding: 2px 10px;
+   *width: 350px;
+   -webkit-appearance: none;
+   overflow: hidden;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+.center
+{
+   position:absolute;
+   top: 20%;
+  left: -27%;
+  width:75%; height:80%;
+  text-align:center;
+  visibility: hidden;
+
+}
+.btn
+{
+  margin-top:8%;
+  transition: all .5s ease-in-out;
+  color: black;
+  height: 10%;
+  width: 25%;
+  background-color: #333;
+  line-height: 2;
+  border: solid black 4px;
+  border-radius: 30px;
+  padding: 10px 100px;
+  font-family: 'lato', sans-serif;
+  font-size: 100%;
+}
+.btn:hover
+{
+  transition: all .5s ease-in-out;
+  color:white;
+  background-color:black;
+  cursor: pointer;
+}
+.btn:focus
+{
+  outline:none;
+}
+
+.load
+{
+  transition: all .5s ease-in-out;
+  color: white;
+  background-color:black;
+  min-width: 4%;
+  padding: 8px 0px;
+}
+
+.loaded
+{
+   -webkit-animation: roll 1s 2; 
+}
+
+.green
+{
+  background-color:#58B14C;
+  color:white;
+  border: none;
+  min-width: 6%;
+  height: 10%;
+  padding: 8px 0px;
+}
+
+
+
+@-webkit-keyframes roll
+{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+#crops {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    left: 2%;
+    top: 29%;
+    position: absolute;
+    visibility: hidden;
+    text-align: center;
+    overflow-y:scroll; 
+    height: 475px;
+    display: block;
+}
+
+#crops td, #crops th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    max-width: 28px;
+    background-color: #111;
+    font-size: 20px;
+
+}
+
+#crops tr:nth-child(even){background-color: #111;}
+
+#crops tr:hover {background-color: #ddd;}
+
+#crops th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+     
+}

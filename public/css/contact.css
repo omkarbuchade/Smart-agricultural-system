@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+	
+.container {
+	max-width:500px;
+	width:50%;
+	margin: 5rem 30rem;
+	position:relative;
+
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+
+.optin-container {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 25rem;
+  position: absolute;
+  
+  margin: -33rem 2rem;
+
+}
+
+.cta {
+  background: #E52B50;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  line-height: .5;
+  padding: 1.3rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .cta {
+    line-height: .7rem;
+    padding: 1.25rem 10rem;
+  }
+}
+
+ .abc form {
+  background: #9C2542;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 1rem;
+ 
+}
+ form input {
+  padding: 0.75rem;
+  margin: 0;
+}
+form input[type="email"] {
+  border: none;
+  font-size: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  outline: #E52B50;
+}
+ form input[type="email"]:focus {
+  outline: 0.25rem solid #E52B50;
+}
+ form input[type="submit"] {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e84263), to(#e52b50));
+  background: linear-gradient(#e84263, #e52b50);
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  margin: 0 0 0 1rem;
+  padding: 0 3rem;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+form input[type="submit"]:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#e84667), to(#e63054));
+  background: linear-gradient(#e84667, #e63054);
+}
+ @media screen and (max-width: 60%) {
+ form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+ form input {
+    padding: 1rem !important;
+    margin: 0 !important;
+    -webkit-box-flex: 100%;
+        -ms-flex: 80%;
+            flex: 80%;
+  }
+   form input[type="submit"] {
+    margin-top: 1rem !important;
+  }
+}
+
+ .abc {
+  display: none;
+}
