@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "final server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "chandu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "create-file": "^1.0.1",
+    "delay": "^2.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "jsonfile": "^4.0.0",
+    "python-shell": "^0.5.0"
+  }
+}
