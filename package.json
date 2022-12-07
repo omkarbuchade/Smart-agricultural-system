@@ -14,7 +14,7 @@
     "create-file": "^1.0.1",
     "delay": "^2.0.0",
     "ejs": "^2.5.7",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "jsonfile": "^4.0.0",
     "python-shell": "^0.5.0"
   }
